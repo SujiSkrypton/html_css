@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+        background-color: rgb(170, 230, 232);
+        background-image: url(https://images.pexels.com/videos/3129671/free-video-3129671.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+
+    .skills h1 {
+        text-align: center;
+        color: aliceblue;
+
+    }
+
+    img {
+        display: block;
+        height: 20vw;
+        width: 20vw;
+
+    }
+
+    .images {
+        display: flex;
+        text-align: center;
+
+    }
+
+    .images h2 {
+        color: aliceblue;
+    }
+
+    #img1 {
+        margin-left: 10vw;
+        transition-delay: .1s;
+        transition-duration: 2s;
+
+    }
+
+    #img1:hover {
+
+        transform: scale(1.2);
+
+    }
+
+    #img2 {
+
+        margin-left: 40vw;
+        transition-delay: 1s;
+        transition-duration: 2s;
+
+    }
+
+    #img2:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    #img3 {
+        position: absolute;
+        text-align: center;
+        margin-left: 40vw;
+        transition-delay: .1s;
+        transition-duration: 2s;
+        color: aliceblue;
+    }
+
+    #img3:hover {
+        transform: scale(1.2);
+    }
+</style>
+
+<body>
+    <div class="skills">
+        <h1>My Skills</h1>
+        <div class="images">
+            <div id="img1">
+                <h2>HTML</h2>
+                <img src="htmlimg.png" alt="this is image">
+            </div>
+            <div id="img2">
+                <h2>CSS</h2>
+                <img src="css.png" alt="this is image">
+            </div>
+        </div>
+        <div id="img3">
+            <h2>Javascript</h2>
+            <img src="js.png" target="index.html" alt="this is image">
+        </div>
+    </div>
+
+</body>
+
+</html>

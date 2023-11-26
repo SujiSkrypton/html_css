@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        .topnav {
+            list-style-type: none;
+            bottom: 500px;
+            top: 0;
+            margin: -10px;
+            padding: 0;
+            overflow: hidden;
+            background-color: cadetblue;
+            padding: 30px 40px 10px 20px;
+
+        }
+
+        .sujiimg img {
+            position: relative;
+            border-radius: 50%;
+            left: 50vw;
+            box-shadow: 10px 10px 55px 12px rgb(223, 222, 225);
+            transition-delay: 1s;
+            transition-duration: 1s;
+        }
+
+        .sujiimg img:hover {
+            transform: scaleX(0.3);
+        }
+
+        .intro {
+            position: relative;
+            bottom: 50vh;
+            font-size: xx-large;
+            text-shadow: 2px 2px 5px;
+        }
+
+        .intro h3 {
+            color: red;
+
+
+        }
+
+        .intro h3 span {
+            color: #0c8243;
+        }
+
+        .content {
+            position: relative;
+            bottom: 30vh;
+        }
+
+        #con1 {
+            border-radius: 30px 20px 10px 30px;
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        #con1:hover {
+            background-color: rgb(199, 26, 121);
+            color: white;
+        }
+
+        #para {
+            color: darkslategrey;
+        }
+
+        li {
+            float: left;
+            font-size: xx-large;
+        }
+
+        li a,
+        .dropbtn {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(17, 6, 6);
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: chocolate;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content ul li {
+            list-style-type: none;
+            margin-left: -30px;
+
+        }
+
+        #con1 {
+            font-size: xx-large;
+        }
+
+        #para {
+            position: relative;
+            top: 10px;
+            font-size: x-large;
+        }
+
+        #para:hover {
+            color: maroon;
+        }
+
+        .contact-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-me h1 {
+            font-size: 56px;
+            color: #fbfbfb;
+            font-weight: 700;
+        }
+
+        .contact-me h1:hover {
+            color: rgb(61, 18, 2);
+        }
+
+        .contact {
+            display: flex;
+            gap: 24px;
+        }
+
+        .contact-card {
+            background-color: rgb(128, 130, 12);
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .contact .contact-card:hover {
+            background-color: rgb(255, 98, 0);
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a href="#about">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Skills</a>
+            <div class="dropdown-content">
+                <a href="technicalskills.html">Technical Skills</a>
+                <a href="softskillmenu.html">Soft Skills/Hobbies</a>
+            </div>
+        </li>
+    </ul>
+    <div class="sujiimg">
+        <img src="suji.jpg" alt="image">
+    </div>
+    <div class="intro">
+        <h3>I'M <Span>Sujatha Nuthalapati,</Span><br>Software Trainee@Skrypton.</h3>
+    </div>
+    <div class="content">
+        <ul>
+            <li id="con1">
+                Career Objective:
+            </li>
+            <li id="para">
+                <p>
+                    To seek a challenging career in any organization<br> where
+                    i can utilize and improve my skills
+                    meet<br> the demand of information technology and to <br>learn
+                    all aspects in the field that would make me<br> a
+                    top professional in the technology.
+
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="contact-me" id="contact-loc">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <div class="contact-card">
+                <i class="ri-message-3-line"></i>
+                <p>nuthalapatisujatha16@.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="ri-phone-line"></i>
+                <p>6302085328</p>
+            </div>
+            <div class="contact-card">
+                <i class="ri-map-pin-3-line"></i>
+                <p>Vijayawada, Andhrapradesh</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
